@@ -103,7 +103,12 @@ def md_table(df: pd.DataFrame, float_cols: list[str] | None = None) -> str:
 
 
 def select_inspection_sample(english: pd.DataFrame) -> pd.DataFrame:
-    """Two English records per queue at the 25th and 75th percentiles of record_id order."""
+    """Stratified systematic sample: two English records per queue.
+
+    Strata are routing queues. Within each stratum, rows are ordered by
+    record_id and the 25th and 75th percentile positions are taken. This is
+    representative (every class appears) and not random or targeted.
+    """
     parts = []
     for _, group in english.groupby(ROUTING_LABEL_FIELD, sort=True):
         ordered = group.sort_values("record_id")

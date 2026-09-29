@@ -23,11 +23,27 @@ Outputs:
 
 ### Selection method
 
+**Method used: stratified systematic sampling (equal allocation).** This is a **representative** design, not a mix of representative and targeted sampling.
+
+| Method | Did we use it? |
+| --- | --- |
+| Stratified | Yes. The stratum is `queue` (the routing label). Every class appears in the sample. |
+| Systematic | Yes. Inside each queue, rows are ordered by `record_id` and we take fixed positions (25th and 75th percentiles), not a random draw. |
+| Random | No. There is no random seed or lottery. |
+| Cluster | No. We did not sample groups of related tickets (e.g. by version or business type) and then take whole groups. |
+| Targeted | No. We did not deliberately hunt short texts, missing subjects, or likely mislabels. |
+
+Procedure:
+
 1. Keep only rows with `language == en`.
 2. Assign `record_id` as above.
 3. Within each of the 10 `queue` values, sort by `record_id` and take the records at the 25th and 75th percentiles of that ordered list.
 
-That yields exactly 20 English records, two per routing class, without using a random seed.
+That yields exactly 20 English records, two per routing class.
+
+Equal allocation (2 per queue) is representative of **class coverage**, not of **class frequency**. Technical Support is about 29% of English tickets, but it still gets the same 2 records as General Inquiry (~1%). A size-proportional sample would have put more rows in the large queues.
+
+A common inspection mix is representative plus targeted (for example 10 stratified records plus 10 chosen because they are short, missing a subject, or look mislabeled). This sample is only the representative half. Edge cases still showed up, but that was luck of the systematic picks, not a targeted rule.
 
 ### Observations
 
