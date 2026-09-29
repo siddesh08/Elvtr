@@ -4,9 +4,9 @@
 
 ## Three candidate datasets
 
-1. **Customer Support Tickets** (Tobi-Bueck / Softoft)
-2. **IT Service Ticket Classification Dataset** (Kaggle / Adison Goh)
-3. **Bitext Customer Service Tagged Training Dataset**
+1. **Customer Support Tickets** (Tobi-Bueck / Softoft) — local copy: `assignment1/task1/dataset_samples/candidate1_aa_dataset-tickets-multi-lang-5-2-50-version.csv`
+2. **IT Service Ticket Classification Dataset** (Kaggle / Adison Goh) — local copy: `assignment1/task1/dataset_samples/candidate2_all_tickets_processed_improved_v3.csv`
+3. **Bitext Customer Service Tagged Training Dataset** — local copy: `assignment1/task1/dataset_samples/candidate3_Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv`
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### Candidate 1 — Customer Support Tickets
 
-- **Name and source URL:** Customer Support Tickets (Tobi-Bueck / Softoft). Dataset card: https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets. DOI: `10.57967/hf/6184`.
+- **Name and source URL:** Customer Support Tickets (Tobi-Bueck / Softoft). Dataset card: https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets. DOI: `10.57967/hf/6184`. Local copy: `assignment1/task1/dataset_samples/candidate1_aa_dataset-tickets-multi-lang-5-2-50-version.csv`.
 - **Version or retrieval date:** Hugging Face revision `ddf1c81a5475992c4fa6752bf1e8b4e31f07bbeb` (last modified 2026-06-28). Retrieved 2026-09-28.
 - **Stated usage terms:** CC BY-NC 4.0. Public download with no approval gate. Educational analysis is allowed. Commercial use is prohibited. Attribution is required.
 - **Required fields:** Ticket text: `subject` and `body`. Routing label: `queue` (department / support team).
@@ -23,7 +23,7 @@
 
 ### Candidate 2 — IT Service Ticket Classification Dataset
 
-- **Name and source URL:** IT Service Ticket Classification Dataset. Kaggle listing: https://www.kaggle.com/datasets/adisongoh/it-service-ticket-classification-dataset. File: `all_tickets_processed_improved_v3.csv`.
+- **Name and source URL:** IT Service Ticket Classification Dataset. Kaggle listing: https://www.kaggle.com/datasets/adisongoh/it-service-ticket-classification-dataset. File: `all_tickets_processed_improved_v3.csv`. Local copy: `assignment1/task1/dataset_samples/candidate2_all_tickets_processed_improved_v3.csv`.
 - **Version or retrieval date:** Published file `all_tickets_processed_improved_v3.csv`. Kaggle listing last updated about 2023. Retrieved 2026-09-28.
 - **Stated usage terms:** CC0: Public Domain. Educational analysis is allowed. A free Kaggle account is typically required to download; no special approval is stated.
 - **Required fields:** Ticket text: `Document`. Routing label: `Topic_group` (`Hardware`, `HR Support`, `Access`, `Miscellaneous`, `Storage`, `Purchase`, `Internal Project`, `Administrative rights`).
@@ -32,7 +32,7 @@
 
 ### Candidate 3 — Bitext Customer Service Tagged Training Dataset
 
-- **Name and source URL:** Bitext - Customer Service Tagged Training Dataset for LLM-based Virtual Assistants. Dataset card: https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset. File: `Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv`.
+- **Name and source URL:** Bitext - Customer Service Tagged Training Dataset for LLM-based Virtual Assistants. Dataset card: https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset. File: `Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv`. Local copy: `assignment1/task1/dataset_samples/candidate3_Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv`.
 - **Version or retrieval date:** v11 in the filename. Hugging Face listing last modified 2024-07-18 (revision `430d1a89bd93bd1fa23c16f29dd53e73f0087443`). Retrieved 2026-09-28.
 - **Stated usage terms:** CDLA-Sharing-1.0. Public download with no approval gate. Educational analysis is allowed. Redistribution of the data must remain under CDLA-Sharing-1.0.
 - **Required fields:** Ticket-text analog: `instruction` (user request). Routing-like label: `category` (10 high-level groups). Finer label: `intent` (27 classes).

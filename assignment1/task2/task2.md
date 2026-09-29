@@ -1,21 +1,21 @@
 # Task 2 — Inspect and Profile the Dataset
 
-**Selected dataset:** Customer Support Tickets (Tobi-Bueck / Softoft), file `assignment1/dataset_samples/candidate1_aa_dataset-tickets-multi-lang-5-2-50-version.csv`.
+**Selected dataset:** Customer Support Tickets (Tobi-Bueck / Softoft), file `assignment1/task1/dataset_samples/candidate1_aa_dataset-tickets-multi-lang-5-2-50-version.csv`.
 
 **Environment:** project `.venv` created with Python 3.12.13 and `requirements.txt` (`pandas==3.0.5`). The assignment mentions Python 3.14.7; that interpreter was not available locally.
 
 **How to re-run the profiler** (from the repository root):
 
 ```bash
-.venv/bin/python assignment1/profile_dataset.py
+.venv/bin/python assignment1/task2/profile_dataset.py
 ```
 
 Outputs:
 
-- `assignment1/outputs/profile_report.md`
-- `assignment1/outputs/inspection_sample.csv`
+- `assignment1/task2/outputs/profile_report.md`
+- `assignment1/task2/outputs/inspection_sample.csv`
 
-**Stable IDs:** the source file has no ticket id. `record_id` is `src-{zero-padded 0-based row index}` in this CSV, assigned in `profile_dataset.py`.
+**Stable IDs:** the source file has no ticket id. `record_id` is `src-{zero-padded 0-based row index}` in this CSV, assigned in `assignment1/task2/profile_dataset.py`.
 
 ---
 
@@ -60,9 +60,9 @@ That yields exactly 20 English records, two per routing class, without using a r
 
 ## 2.2 Profile
 
-Reproducible code: `assignment1/profile_dataset.py`.
+Reproducible code: `assignment1/task2/profile_dataset.py`.
 
-Saved report: `assignment1/outputs/profile_report.md`.
+Saved report: `assignment1/task2/outputs/profile_report.md`.
 
 Headline results (English analysis set unless noted):
 
