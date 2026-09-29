@@ -1,8 +1,6 @@
 # Task 1 — Find and Select a Dataset
 
-**Intended use:** given the text of a newly arrived support ticket, route it to the appropriate support team.
-
-**Retrieval date for all candidates:** 2026-09-28
+**Intended use/ Goal of Dataset:** given the text of a newly arrived support ticket, route it to the appropriate support team.
 
 ## Three candidate datasets
 
@@ -59,4 +57,7 @@ None of the three licenses prohibit educational analysis.
 
 **Selected dataset:** Customer Support Tickets (Tobi-Bueck / Softoft).
 
-This dataset is the closest match to the target use case: each record is a support email with natural-language text available at arrival (`subject`, `body`) and a categorical routing target (`queue`) that names the support team. It also includes useful context (priority, type, tags, language) and enough English examples across several queues for later inspection and profiling. The other two candidates remain eligible, but the Kaggle set is a pre-cleaned text-and-label file with no arrival metadata, and Bitext is synthetic chatbot utterances rather than full tickets.
+Reasons for choosing this dataset:
+- Each record is a support email with natural-language text available at arrival (`subject`, `body`) and a categorical routing target (`queue`) that names the support team
+- It also includes useful context (priority, type, tags, language) and enough English examples across several queues for later inspection and profiling
+- The other two candidates remain eligible, but the Kaggle set is a pre-cleaned text-and-label file with no arrival metadata, and Bitext is synthetic chatbot utterances rather than full tickets
