@@ -18,7 +18,7 @@
 - **Version or retrieval date:** Hugging Face revision `ddf1c81a5475992c4fa6752bf1e8b4e31f07bbeb` (last modified 2026-06-28). Retrieved 2026-09-28.
 - **Stated usage terms:** CC BY-NC 4.0. Public download with no approval gate. Educational analysis is allowed. Commercial use is prohibited. Attribution is required.
 - **Required fields:** Ticket text: `subject` and `body`. Routing label: `queue` (department / support team).
-- **Optional context fields:** `priority`, `type` (Incident / Request / Problem / Change), `language`, `tag_1`–`tag_8`, agent `answer`. No timestamp or channel field.
+- **Optional context fields:** `priority`, `type` (Incident / Request / Problem / Change), `language`, `tag_1`–`tag_8`, and the `answer` column (helpdesk reply). No timestamp or channel field.
 - **Number of usable records:** 28,261 English records (`language=en`) out of 61,765 total in the combined Hugging Face snapshot. The remainder are German.
 
 ### Candidate 2 — IT Service Ticket Classification Dataset
@@ -49,7 +49,7 @@ None of the three licenses prohibit educational analysis.
 
 | Dataset | Source | Version / date | Usage terms | Ticket text | Routing label | Optional context | Usable English records |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Customer Support Tickets (Tobi-Bueck / Softoft) | [Hugging Face](https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets) | Revision `ddf1c81` (2026-06-28); retrieved 2026-09-28 | CC BY-NC 4.0 | `subject` + `body` | `queue` | Priority, type, tags, language, agent answer | 28,261 of 61,765 |
+| Customer Support Tickets (Tobi-Bueck / Softoft) | [Hugging Face](https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets) | Revision `ddf1c81` (2026-06-28); retrieved 2026-09-28 | CC BY-NC 4.0 | `subject` + `body` | `queue` | Priority, type, tags, language, helpdesk reply | 28,261 of 61,765 |
 | IT Service Ticket Classification Dataset | [Kaggle](https://www.kaggle.com/datasets/adisongoh/it-service-ticket-classification-dataset) | `all_tickets_processed_improved_v3.csv` (~2023); retrieved 2026-09-28 | CC0: Public Domain | `Document` | `Topic_group` | None in this file | 47,837 |
 | Bitext Customer Service Tagged Training Dataset | [Hugging Face](https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset) | v11 file (listing 2024-07-18); retrieved 2026-09-28 | CDLA-Sharing-1.0 | `instruction` | `category` (or `intent`) | Flags, example response | 26,872 |
 
@@ -57,7 +57,4 @@ None of the three licenses prohibit educational analysis.
 
 **Selected dataset:** Customer Support Tickets (Tobi-Bueck / Softoft).
 
-Reasons for choosing this dataset:
-- Each record is a support email with natural-language text available at arrival (`subject`, `body`) and a categorical routing target (`queue`) that names the support team
-- It also includes useful context (priority, type, tags, language) and enough English examples across several queues for later inspection and profiling
-- The other two candidates remain eligible, but the Kaggle set is a pre-cleaned text-and-label file with no arrival metadata, and Bitext is synthetic chatbot utterances rather than full tickets
+I chose this dataset because each record is a support email with natural-language text available at arrival (`subject`, `body`) and a categorical routing target (`queue`) that names the support team. It also includes useful context (priority, type, tags, language) and enough English examples across several queues for inspection and profiling. The other two candidates are eligible, but the Kaggle set is a pre-cleaned text-and-label file with no arrival metadata, and Bitext is synthetic chatbot utterances rather than full tickets.

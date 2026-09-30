@@ -2,7 +2,7 @@
 
 **Selected dataset:** Customer Support Tickets (Tobi-Bueck / Softoft), file `assignment1/task1/dataset_samples/candidate1_aa_dataset-tickets-multi-lang-5-2-50-version.csv`.
 
-**Environment:** project `.venv` created with Python 3.12.13 and `requirements.txt` (`pandas==3.0.5`). The assignment mentions Python 3.14.7; that interpreter was not available locally.
+**Environment:** `.venv` with Python 3.12.13 and `assignment1/homework_materials/requirements.txt` (`pandas==3.0.5`).
 
 **How to re-run the profiler** (from the repository root):
 
@@ -23,15 +23,15 @@ Outputs:
 
 ### Selection method
 
-**Method used: stratified systematic sampling (equal allocation).** This is a **representative** design, not a mix of representative and targeted sampling.
+**Method: stratified systematic sampling (equal allocation).** This is a representative design, not a mix of representative and targeted sampling.
 
-| Method | Did we use it? |
+| Method | Used? |
 | --- | --- |
 | Stratified | Yes. The stratum is `queue` (the routing label). Every class appears in the sample. |
-| Systematic | Yes. Inside each queue, rows are ordered by `record_id` and we take fixed positions (25th and 75th percentiles), not a random draw. |
-| Random | No. There is no random seed or lottery. |
-| Cluster | No. We did not sample groups of related tickets (e.g. by version or business type) and then take whole groups. |
-| Targeted | No. We did not deliberately hunt short texts, missing subjects, or likely mislabels. |
+| Systematic | Yes. Inside each queue, rows are ordered by `record_id` and the 25th and 75th percentile positions are taken, not a random draw. |
+| Random | No. There is no random seed. |
+| Cluster | No. Related groups (for example by `version`) were not sampled as units. |
+| Targeted | No. Short texts, missing subjects, and likely mislabels were not sought on purpose. |
 
 Procedure:
 
@@ -58,7 +58,7 @@ A common inspection mix is representative plus targeted (for example 10 stratifi
 | `src-06753` | Human Resources | Missing subject. SaaS outage from server overload. No HR content. Queue looks wrong. |
 | `src-19957` | Human Resources | Brand-growth / marketing strategy request. No HR content. Queue looks wrong. |
 | `src-06311` | IT Support | Marketing-agency “digital strategy” with vague software/hardware problems. IT Support is possible; the subject overstates urgency relative to the detail given. |
-| `src-20061` | IT Support | Device/app disconnects after updates. Reasonable IT/Technical incident. Agent answer is a stub (“provide more details”). |
+| `src-20061` | IT Support | Device/app disconnects after updates. Reasonable IT/Technical incident. The `answer` field is only a stub (“provide more details”). |
 | `src-06059` | Product Support | Missing subject. Healthcare unauthorized-access report that already describes remediation. Sounds like a security incident more than product support. |
 | `src-20961` | Product Support | Clear request for Oracle 19c medical-data storage practices. Product/IT support is a fair label. |
 | `src-07148` | Returns and Exchanges | Digital brand / SEO / email marketing question. Nothing about a return or exchange. Queue looks wrong. |
@@ -70,7 +70,7 @@ A common inspection mix is representative plus targeted (for example 10 stratifi
 | `src-06861` | Technical Support | Data-analytics crashes and GPU drivers. Queue fits. |
 | `src-20735` | Technical Support | System outage affecting “Django SAP ERP.” Queue fits; product list looks synthetic. |
 
-**Sample-level takeaway:** English ticket bodies are usually usable as arrival text, but subjects are often missing, some bodies are too short, and `queue` frequently disagrees with the text (especially Human Resources and Returns and Exchanges in this sample). Several tickets look templated or mixed-product rather than authentic emails.
+**Sample-level takeaway:** English ticket bodies are usually usable as arrival text, but subjects are often missing, some bodies are too short, and `queue` frequently disagrees with the text (especially Human Resources and Returns and Exchanges in this sample). Several tickets look templated or list unrelated products.
 
 ---
 

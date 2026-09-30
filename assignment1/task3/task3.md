@@ -1,8 +1,6 @@
 # Task 3 — Create and Inspect Synthetic Data
 
-**Selected source:** Customer Support Tickets (Tobi-Bueck / Softoft), English rows in `assignment1/task1/dataset_samples/candidate1_aa_dataset-tickets-multi-lang-5-2-50-version.csv`.
-
-This file records the Task 3.1 plan, the Task 3.2 generator, and the Task 3.3 inspection.
+**Source file:** Customer Support Tickets (Tobi-Bueck / Softoft), English rows in `assignment1/task1/dataset_samples/candidate1_aa_dataset-tickets-multi-lang-5-2-50-version.csv`.
 
 ---
 
@@ -15,7 +13,7 @@ Task 2 found two related problems in the English routing data:
 1. **Label noise on some queues.** In the 20-record inspection, `queue` often disagreed with the ticket text. Human Resources and Returns and Exchanges were the worst (SaaS outages and brand-marketing questions labeled as those teams). Billing, General Inquiry, and Sales also had mismatches.
 2. **Class imbalance.** Technical Support is about 29% of English tickets; General Inquiry is about 1.4% and Human Resources about 2.1%. A router trained on the source file will see far more Technical Support than the small queues, and many of those small-queue rows are not trustworthy seeds.
 
-Naive oversampling of existing Human Resources or Returns rows would copy the same mistakes. The assignment notes that synthetic records inherit seed errors, so seeds must be on-label.
+Naive oversampling of existing Human Resources or Returns rows would copy the same mistakes. Synthetic rows inherit seed errors, so only on-label seeds are used.
 
 The gap synthetic data can reasonably address: **too few English tickets whose text clearly belongs to the small, noisy queues.**
 
@@ -48,7 +46,7 @@ Seeds will be short **slots** (product tokens, issue nouns, polite openers) take
 - **Templates:** Fixed subject/body frames with slots such as `{issue}`, `{item}`, `{order_ref}`, `{account_action}`. Filling those frames produces new arrival text that never copies a complete source ticket, runs locally without an LLM, and is deterministic.
 - **Why not augmentation:** Rewriting one existing HR/Returns ticket would stay too close to the original (risk of copying the full text) and would keep a bad label if the seed was misrouted.
 - **Why not combinational (as the main method):** Crossing a full subject from ticket A with a full body from ticket B produced mixed-product, incoherent emails in Task 2. Slots may be drawn from more than one seed row; whole tickets will not be concatenated.
-- **Why not simulation:** We are not modeling arrivals, channels, or SLAs over time. We only need 50 on-label English examples for specific queues.
+- **Why not simulation:** The generator does not model arrivals, channels, or SLAs over time. The goal is 50 on-label English examples for specific queues.
 
 Templates fit the gap because the frame **forces** HR-like or return-like language onto the matching `queue`, which random remixes of the source file cannot do. Fifty rows will not rebalance 16,338 English tickets, but they add a clean slice those classes currently lack.
 
