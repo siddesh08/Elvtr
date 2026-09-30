@@ -1,0 +1,251 @@
+record_id,provenance,subject,body,answer,type,queue,priority,language,version,tag_1,tag_2,tag_3,tag_4,tag_5,tag_6,tag_7,tag_8
+syn-00000,synthetic,Request for help with Employee,"Dear Human Resources team,
+
+I need assistance with Employee for my employee record. Please confirm which form to use for payroll setup and how long processing usually takes. I would like to complete this before the next pay cycle.
+
+Thank you.",Thank you for contacting Human Resources. We will review your request about Employee and payroll setup and reply with the next steps.,Change,Human Resources,high,en,400,Employee,Training,Account,Access,,,,
+syn-00001,synthetic,Question about benefits enrollment,"Hello,
+
+I am writing about benefits enrollment related to Training. Could you explain the current policy and the steps I should follow? Please also tell me who in HR owns this request.
+
+Regards.",Thank you for contacting Human Resources. We will review your request about Training and benefits enrollment and reply with the next steps.,Incident,Human Resources,low,en,400,Training,Account,Access,Login,,,,
+syn-00002,synthetic,Request for help with Account,"Dear Human Resources team,
+
+I need assistance with Account for my employee record. Please confirm which form to use for PTO balance and how long processing usually takes. I would like to complete this before the next pay cycle.
+
+Thank you.",Thank you for contacting Human Resources. We will review your request about Account and PTO balance and reply with the next steps.,Problem,Human Resources,medium,en,400,Account,Access,Login,payroll setup,,,,
+syn-00003,synthetic,Question about payroll setup,"Hello,
+
+I am writing about payroll setup related to Access. Could you explain the current policy and the steps I should follow? Please also tell me who in HR owns this request.
+
+Regards.",Thank you for contacting Human Resources. We will review your request about Access and payroll setup and reply with the next steps.,Request,Human Resources,high,en,400,Access,Login,payroll setup,benefits enrollment,,,,
+syn-00004,synthetic,Request for help with Login,"Dear Human Resources team,
+
+I need assistance with Login for my employee record. Please confirm which form to use for benefits enrollment and how long processing usually takes. I would like to complete this before the next pay cycle.
+
+Thank you.",Thank you for contacting Human Resources. We will review your request about Login and benefits enrollment and reply with the next steps.,Change,Human Resources,low,en,400,Login,payroll setup,benefits enrollment,PTO balance,,,,
+syn-00005,synthetic,Question about PTO balance,"Hello,
+
+I am writing about PTO balance related to Employee. Could you explain the current policy and the steps I should follow? Please also tell me who in HR owns this request.
+
+Regards.",Thank you for contacting Human Resources. We will review your request about Employee and PTO balance and reply with the next steps.,Incident,Human Resources,medium,en,400,payroll setup,benefits enrollment,PTO balance,Employee,,,,
+syn-00006,synthetic,Request for help with Training,"Dear Human Resources team,
+
+I need assistance with Training for my employee record. Please confirm which form to use for payroll setup and how long processing usually takes. I would like to complete this before the next pay cycle.
+
+Thank you.",Thank you for contacting Human Resources. We will review your request about Training and payroll setup and reply with the next steps.,Problem,Human Resources,high,en,400,benefits enrollment,PTO balance,Employee,Training,,,,
+syn-00007,synthetic,Question about benefits enrollment,"Hello,
+
+I am writing about benefits enrollment related to Account. Could you explain the current policy and the steps I should follow? Please also tell me who in HR owns this request.
+
+Regards.",Thank you for contacting Human Resources. We will review your request about Account and benefits enrollment and reply with the next steps.,Request,Human Resources,low,en,400,PTO balance,Employee,Training,Account,,,,
+syn-00008,synthetic,Request for help with Access,"Dear Human Resources team,
+
+I need assistance with Access for my employee record. Please confirm which form to use for PTO balance and how long processing usually takes. I would like to complete this before the next pay cycle.
+
+Thank you.",Thank you for contacting Human Resources. We will review your request about Access and PTO balance and reply with the next steps.,Change,Human Resources,medium,en,400,Employee,Training,Account,Access,,,,
+syn-00009,synthetic,Question about payroll setup,"Hello,
+
+I am writing about payroll setup related to Login. Could you explain the current policy and the steps I should follow? Please also tell me who in HR owns this request.
+
+Regards.",Thank you for contacting Human Resources. We will review your request about Login and payroll setup and reply with the next steps.,Incident,Human Resources,high,en,400,Training,Account,Access,Login,,,,
+syn-00010,synthetic,Request for help with Employee,"Dear Human Resources team,
+
+I need assistance with Employee for my employee record. Please confirm which form to use for benefits enrollment and how long processing usually takes. I would like to complete this before the next pay cycle.
+
+Thank you.",Thank you for contacting Human Resources. We will review your request about Employee and benefits enrollment and reply with the next steps.,Problem,Human Resources,low,en,400,Account,Access,Login,payroll setup,,,,
+syn-00011,synthetic,Question about PTO balance,"Hello,
+
+I am writing about PTO balance related to Training. Could you explain the current policy and the steps I should follow? Please also tell me who in HR owns this request.
+
+Regards.",Thank you for contacting Human Resources. We will review your request about Training and PTO balance and reply with the next steps.,Request,Human Resources,medium,en,400,Access,Login,payroll setup,benefits enrollment,,,,
+syn-00012,synthetic,Return request for Warranty,"Dear Support,
+
+I would like to return Warranty from a recent order. The reason is a refund. Please send a return authorization and the shipping address. I still have the original packaging.
+
+Thank you.",Thank you for contacting Returns and Exchanges. We will review your request about Warranty and a refund and reply with the next steps.,Change,Returns and Exchanges,high,en,400,Warranty,Shipment,Replacement,Hardware,,,,
+syn-00013,synthetic,Exchange needed: Shipment,"Hello Returns team,
+
+I received Shipment but it does not match what I ordered. I am requesting an exchange because of an exchange. Please confirm whether I should wait for the replacement before sending the original back.
+
+Thanks.",Thank you for contacting Returns and Exchanges. We will review your request about Shipment and an exchange and reply with the next steps.,Incident,Returns and Exchanges,low,en,400,Shipment,Replacement,Hardware,Software,,,,
+syn-00014,synthetic,Return request for Replacement,"Dear Support,
+
+I would like to return Replacement from a recent order. The reason is a prepaid label. Please send a return authorization and the shipping address. I still have the original packaging.
+
+Thank you.",Thank you for contacting Returns and Exchanges. We will review your request about Replacement and a prepaid label and reply with the next steps.,Problem,Returns and Exchanges,medium,en,400,Replacement,Hardware,Software,Policy,,,,
+syn-00015,synthetic,Exchange needed: Hardware,"Hello Returns team,
+
+I received Hardware but it does not match what I ordered. I am requesting an exchange because of a refund. Please confirm whether I should wait for the replacement before sending the original back.
+
+Thanks.",Thank you for contacting Returns and Exchanges. We will review your request about Hardware and a refund and reply with the next steps.,Request,Returns and Exchanges,high,en,400,Hardware,Software,Policy,a refund,,,,
+syn-00016,synthetic,Return request for Software,"Dear Support,
+
+I would like to return Software from a recent order. The reason is an exchange. Please send a return authorization and the shipping address. I still have the original packaging.
+
+Thank you.",Thank you for contacting Returns and Exchanges. We will review your request about Software and an exchange and reply with the next steps.,Change,Returns and Exchanges,low,en,400,Software,Policy,a refund,an exchange,,,,
+syn-00017,synthetic,Exchange needed: Policy,"Hello Returns team,
+
+I received Policy but it does not match what I ordered. I am requesting an exchange because of a prepaid label. Please confirm whether I should wait for the replacement before sending the original back.
+
+Thanks.",Thank you for contacting Returns and Exchanges. We will review your request about Policy and a prepaid label and reply with the next steps.,Incident,Returns and Exchanges,medium,en,400,Policy,a refund,an exchange,a prepaid label,,,,
+syn-00018,synthetic,Return request for Warranty,"Dear Support,
+
+I would like to return Warranty from a recent order. The reason is a refund. Please send a return authorization and the shipping address. I still have the original packaging.
+
+Thank you.",Thank you for contacting Returns and Exchanges. We will review your request about Warranty and a refund and reply with the next steps.,Problem,Returns and Exchanges,high,en,400,a refund,an exchange,a prepaid label,Warranty,,,,
+syn-00019,synthetic,Exchange needed: Shipment,"Hello Returns team,
+
+I received Shipment but it does not match what I ordered. I am requesting an exchange because of an exchange. Please confirm whether I should wait for the replacement before sending the original back.
+
+Thanks.",Thank you for contacting Returns and Exchanges. We will review your request about Shipment and an exchange and reply with the next steps.,Request,Returns and Exchanges,low,en,400,an exchange,a prepaid label,Warranty,Shipment,,,,
+syn-00020,synthetic,Return request for Replacement,"Dear Support,
+
+I would like to return Replacement from a recent order. The reason is a prepaid label. Please send a return authorization and the shipping address. I still have the original packaging.
+
+Thank you.",Thank you for contacting Returns and Exchanges. We will review your request about Replacement and a prepaid label and reply with the next steps.,Change,Returns and Exchanges,medium,en,400,a prepaid label,Warranty,Shipment,Replacement,,,,
+syn-00021,synthetic,Exchange needed: Hardware,"Hello Returns team,
+
+I received Hardware but it does not match what I ordered. I am requesting an exchange because of a refund. Please confirm whether I should wait for the replacement before sending the original back.
+
+Thanks.",Thank you for contacting Returns and Exchanges. We will review your request about Hardware and a refund and reply with the next steps.,Incident,Returns and Exchanges,high,en,400,Warranty,Shipment,Replacement,Hardware,,,,
+syn-00022,synthetic,Return request for Software,"Dear Support,
+
+I would like to return Software from a recent order. The reason is an exchange. Please send a return authorization and the shipping address. I still have the original packaging.
+
+Thank you.",Thank you for contacting Returns and Exchanges. We will review your request about Software and an exchange and reply with the next steps.,Problem,Returns and Exchanges,low,en,400,Shipment,Replacement,Hardware,Software,,,,
+syn-00023,synthetic,Exchange needed: Policy,"Hello Returns team,
+
+I received Policy but it does not match what I ordered. I am requesting an exchange because of a prepaid label. Please confirm whether I should wait for the replacement before sending the original back.
+
+Thanks.",Thank you for contacting Returns and Exchanges. We will review your request about Policy and a prepaid label and reply with the next steps.,Request,Returns and Exchanges,medium,en,400,Replacement,Hardware,Software,Policy,,,,
+syn-00024,synthetic,Question about Guidance policy,"Dear Customer Support,
+
+I am not reporting an outage. I only need information about Guidance. Specifically, I want to understand business hours and where that is documented. A short pointer to the public policy page would be enough.
+
+Thank you.",Thank you for contacting General Inquiry. We will review your request about Guidance and business hours and reply with the next steps.,Change,General Inquiry,high,en,400,Guidance,Organization,Documentation,business hours,,,,
+syn-00025,synthetic,Where can I find the published policy?,"Hello,
+
+This is a general question, not a technical incident. Could you tell me how Organization is handled and share the published policy? I need this to plan a visit and do not need a technician assigned.
+
+Regards.",Thank you for contacting General Inquiry. We will review your request about Organization and the published policy and reply with the next steps.,Incident,General Inquiry,low,en,400,Organization,Documentation,business hours,the published policy,,,,
+syn-00026,synthetic,Question about Documentation policy,"Dear Customer Support,
+
+I am not reporting an outage. I only need information about Documentation. Specifically, I want to understand store location rules and where that is documented. A short pointer to the public policy page would be enough.
+
+Thank you.",Thank you for contacting General Inquiry. We will review your request about Documentation and store location rules and reply with the next steps.,Problem,General Inquiry,medium,en,400,Documentation,business hours,the published policy,store location rules,,,,
+syn-00027,synthetic,Where can I find business hours?,"Hello,
+
+This is a general question, not a technical incident. Could you tell me how Guidance is handled and share business hours? I need this to plan a visit and do not need a technician assigned.
+
+Regards.",Thank you for contacting General Inquiry. We will review your request about Guidance and business hours and reply with the next steps.,Request,General Inquiry,high,en,400,business hours,the published policy,store location rules,Guidance,,,,
+syn-00028,synthetic,Question about Organization policy,"Dear Customer Support,
+
+I am not reporting an outage. I only need information about Organization. Specifically, I want to understand the published policy and where that is documented. A short pointer to the public policy page would be enough.
+
+Thank you.",Thank you for contacting General Inquiry. We will review your request about Organization and the published policy and reply with the next steps.,Change,General Inquiry,low,en,400,the published policy,store location rules,Guidance,Organization,,,,
+syn-00029,synthetic,Where can I find store location rules?,"Hello,
+
+This is a general question, not a technical incident. Could you tell me how Documentation is handled and share store location rules? I need this to plan a visit and do not need a technician assigned.
+
+Regards.",Thank you for contacting General Inquiry. We will review your request about Documentation and store location rules and reply with the next steps.,Incident,General Inquiry,medium,en,400,store location rules,Guidance,Organization,Documentation,,,,
+syn-00030,synthetic,Question about Guidance policy,"Dear Customer Support,
+
+I am not reporting an outage. I only need information about Guidance. Specifically, I want to understand business hours and where that is documented. A short pointer to the public policy page would be enough.
+
+Thank you.",Thank you for contacting General Inquiry. We will review your request about Guidance and business hours and reply with the next steps.,Problem,General Inquiry,high,en,400,Guidance,Organization,Documentation,business hours,,,,
+syn-00031,synthetic,Where can I find the published policy?,"Hello,
+
+This is a general question, not a technical incident. Could you tell me how Organization is handled and share the published policy? I need this to plan a visit and do not need a technician assigned.
+
+Regards.",Thank you for contacting General Inquiry. We will review your request about Organization and the published policy and reply with the next steps.,Request,General Inquiry,low,en,400,Organization,Documentation,business hours,the published policy,,,,
+syn-00032,synthetic,Question about Documentation policy,"Dear Customer Support,
+
+I am not reporting an outage. I only need information about Documentation. Specifically, I want to understand store location rules and where that is documented. A short pointer to the public policy page would be enough.
+
+Thank you.",Thank you for contacting General Inquiry. We will review your request about Documentation and store location rules and reply with the next steps.,Change,General Inquiry,medium,en,400,Documentation,business hours,the published policy,store location rules,,,,
+syn-00033,synthetic,Where can I find business hours?,"Hello,
+
+This is a general question, not a technical incident. Could you tell me how Guidance is handled and share business hours? I need this to plan a visit and do not need a technician assigned.
+
+Regards.",Thank you for contacting General Inquiry. We will review your request about Guidance and business hours and reply with the next steps.,Incident,General Inquiry,high,en,400,business hours,the published policy,store location rules,Guidance,,,,
+syn-00034,synthetic,Pricing question for Salesforce,"Dear Sales team,
+
+We are evaluating Salesforce before purchase. Please send current pricing, volume discounts, and a quote that covers annual pricing. We are not asking for break-fix support yet.
+
+Thank you.",Thank you for contacting Sales and Pre-Sales. We will review your request about Salesforce and annual pricing and reply with the next steps.,Change,Sales and Pre-Sales,high,en,400,Salesforce,SaaS,CRM,Pricing,,,,
+syn-00035,synthetic,Pre-sales comparison: SaaS,"Hello,
+
+I would like a pre-sales walkthrough of SaaS, focused on a written quote. Could you also outline contract terms and the trial options available?
+
+Best regards.",Thank you for contacting Sales and Pre-Sales. We will review your request about SaaS and a written quote and reply with the next steps.,Incident,Sales and Pre-Sales,low,en,400,SaaS,CRM,Pricing,Project Management,,,,
+syn-00036,synthetic,Pricing question for CRM,"Dear Sales team,
+
+We are evaluating CRM before purchase. Please send current pricing, volume discounts, and a quote that covers license tiers. We are not asking for break-fix support yet.
+
+Thank you.",Thank you for contacting Sales and Pre-Sales. We will review your request about CRM and license tiers and reply with the next steps.,Problem,Sales and Pre-Sales,medium,en,400,CRM,Pricing,Project Management,Customization,,,,
+syn-00037,synthetic,Pre-sales comparison: Pricing,"Hello,
+
+I would like a pre-sales walkthrough of Pricing, focused on annual pricing. Could you also outline contract terms and the trial options available?
+
+Best regards.",Thank you for contacting Sales and Pre-Sales. We will review your request about Pricing and annual pricing and reply with the next steps.,Request,Sales and Pre-Sales,high,en,400,Pricing,Project Management,Customization,Discount,,,,
+syn-00038,synthetic,Pricing question for Project Management,"Dear Sales team,
+
+We are evaluating Project Management before purchase. Please send current pricing, volume discounts, and a quote that covers a written quote. We are not asking for break-fix support yet.
+
+Thank you.",Thank you for contacting Sales and Pre-Sales. We will review your request about Project Management and a written quote and reply with the next steps.,Change,Sales and Pre-Sales,low,en,400,Project Management,Customization,Discount,annual pricing,,,,
+syn-00039,synthetic,Pre-sales comparison: Customization,"Hello,
+
+I would like a pre-sales walkthrough of Customization, focused on license tiers. Could you also outline contract terms and the trial options available?
+
+Best regards.",Thank you for contacting Sales and Pre-Sales. We will review your request about Customization and license tiers and reply with the next steps.,Incident,Sales and Pre-Sales,medium,en,400,Customization,Discount,annual pricing,a written quote,,,,
+syn-00040,synthetic,Pricing question for Discount,"Dear Sales team,
+
+We are evaluating Discount before purchase. Please send current pricing, volume discounts, and a quote that covers annual pricing. We are not asking for break-fix support yet.
+
+Thank you.",Thank you for contacting Sales and Pre-Sales. We will review your request about Discount and annual pricing and reply with the next steps.,Problem,Sales and Pre-Sales,high,en,400,Discount,annual pricing,a written quote,license tiers,,,,
+syn-00041,synthetic,Pre-sales comparison: Salesforce,"Hello,
+
+I would like a pre-sales walkthrough of Salesforce, focused on a written quote. Could you also outline contract terms and the trial options available?
+
+Best regards.",Thank you for contacting Sales and Pre-Sales. We will review your request about Salesforce and a written quote and reply with the next steps.,Request,Sales and Pre-Sales,low,en,400,annual pricing,a written quote,license tiers,Salesforce,,,,
+syn-00042,synthetic,Pricing question for SaaS,"Dear Sales team,
+
+We are evaluating SaaS before purchase. Please send current pricing, volume discounts, and a quote that covers license tiers. We are not asking for break-fix support yet.
+
+Thank you.",Thank you for contacting Sales and Pre-Sales. We will review your request about SaaS and license tiers and reply with the next steps.,Change,Sales and Pre-Sales,medium,en,400,a written quote,license tiers,Salesforce,SaaS,,,,
+syn-00043,synthetic,Pre-sales comparison: CRM,"Hello,
+
+I would like a pre-sales walkthrough of CRM, focused on annual pricing. Could you also outline contract terms and the trial options available?
+
+Best regards.",Thank you for contacting Sales and Pre-Sales. We will review your request about CRM and annual pricing and reply with the next steps.,Incident,Sales and Pre-Sales,high,en,400,license tiers,Salesforce,SaaS,CRM,,,,
+syn-00044,synthetic,Invoice question about Subscription,"Dear Billing team,
+
+I have a question about charges related to Subscription. The invoice appears to include a duplicate charge, and I want to confirm the amount before I pay. Please point me to the line items and accepted payment methods.
+
+Thank you.",Thank you for contacting Billing and Payments. We will review your request about Subscription and a duplicate charge and reply with the next steps.,Change,Billing and Payments,high,en,400,Subscription,Discount,ERP,Invoice,,,,
+syn-00045,synthetic,Payment method update for Discount,"Hello Billing,
+
+I need to update how I pay for Discount. Please confirm the steps to change the payment method and whether proration will appear on the next invoice.
+
+Regards.",Thank you for contacting Billing and Payments. We will review your request about Discount and proration and reply with the next steps.,Incident,Billing and Payments,low,en,400,Discount,ERP,Invoice,CRM,,,,
+syn-00046,synthetic,Invoice question about ERP,"Dear Billing team,
+
+I have a question about charges related to ERP. The invoice appears to include the billing cycle, and I want to confirm the amount before I pay. Please point me to the line items and accepted payment methods.
+
+Thank you.",Thank you for contacting Billing and Payments. We will review your request about ERP and the billing cycle and reply with the next steps.,Problem,Billing and Payments,medium,en,400,ERP,Invoice,CRM,AWS,,,,
+syn-00047,synthetic,Payment method update for Invoice,"Hello Billing,
+
+I need to update how I pay for Invoice. Please confirm the steps to change the payment method and whether a duplicate charge will appear on the next invoice.
+
+Regards.",Thank you for contacting Billing and Payments. We will review your request about Invoice and a duplicate charge and reply with the next steps.,Request,Billing and Payments,high,en,400,Invoice,CRM,AWS,Cost,,,,
+syn-00048,synthetic,Invoice question about CRM,"Dear Billing team,
+
+I have a question about charges related to CRM. The invoice appears to include proration, and I want to confirm the amount before I pay. Please point me to the line items and accepted payment methods.
+
+Thank you.",Thank you for contacting Billing and Payments. We will review your request about CRM and proration and reply with the next steps.,Change,Billing and Payments,low,en,400,CRM,AWS,Cost,Accounting,,,,
+syn-00049,synthetic,Payment method update for AWS,"Hello Billing,
+
+I need to update how I pay for AWS. Please confirm the steps to change the payment method and whether the billing cycle will appear on the next invoice.
+
+Regards.",Thank you for contacting Billing and Payments. We will review your request about AWS and the billing cycle and reply with the next steps.,Incident,Billing and Payments,medium,en,400,AWS,Cost,Accounting,a duplicate charge,,,,
