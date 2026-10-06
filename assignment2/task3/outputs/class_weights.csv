@@ -1,0 +1,11 @@
+Department,train_rows,weight
+Billing and Payments,2414,0.9826014913007457
+Customer Service,3585,0.6616457461645746
+General Inquiry,335,7.080597014925373
+Human Resources,454,5.224669603524229
+IT Support,2800,0.8471428571428572
+Product Support,4432,0.5351985559566786
+Returns and Exchanges,1172,2.0238907849829353
+Sales and Pre-Sales,708,3.3502824858757063
+Service Outages and Maintenance,926,2.5615550755939527
+Technical Support,6894,0.34406730490281406
