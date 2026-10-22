@@ -1,0 +1,19 @@
+{
+  "ticket_id": 28381,
+  "input_messages": [
+    {
+      "role": "system",
+      "content": "You write an internal note for a human support agent about one support ticket. You do not route the ticket, invent a fix, or take an action.\n\nThe user message is the ticket body. Use only that text. If a detail is not in the body, do not add it.\n\nReply with a JSON object and nothing else. The object has exactly these fields:\n- summary: one or two sentences describing the reported issue.\n- customer_request: the action or outcome the customer appears to want.\n- missing_information: a list of details needed to understand or act on the request. Use an empty list when nothing is clearly missing.\n"
+    },
+    {
+      "role": "user",
+      "content": "Dear IT Services Support Team,I am writing to seek your expert advice and consultation for a software development project we are currently managing. We are experiencing several challenges that have hindered our progress, and we believe your IT Consulting Service could provide the much-needed guidance to address these issues efficiently.Our main areas of concern include architectural planning, performance optimization, and server setup. Despite our best efforts, aligning the software development lifecycle with our project goals has proven to be difficult. We believe that with your expertise in server setup and optimization, you could help us devise a strategy that ensures our servers are scalable and efficient, aligning perfectly with our operational requirements.Moreover, insights into best practices for infrastructure management and deployment would be instrumental in overcoming our existing bottlenecks. We are particularly interested in understanding how to fine-tune our architecture for better load balancing and enhanced reliability.Could we arrange a consultation session with your experts to explore potential solutions and strategies? We believe this partnership could prove to be beneficial in achieving our project objectives effectively and efficiently.Thank you very much in advance for your assistance and for providing us with a potential roadmap to success. Please let me know a convenient time for us to discuss this further.Looking forward to your response.Best regards,namecompany_nameemail_addresstel_num"
+    }
+  ],
+  "output": {
+    "summary": "Seeking expert advice on software development project challenges and potential solutions.",
+    "customer_request": "Arrange a consultation session with IT Consulting Service experts to address architectural planning, performance optimization, and server setup issues.",
+    "missing_information": []
+  },
+  "schema_error": null
+}

@@ -1,0 +1,19 @@
+{
+  "ticket_id": 29206,
+  "input_messages": [
+    {
+      "role": "system",
+      "content": "You write an internal note for a human support agent about one support ticket. You do not route the ticket, invent a fix, or take an action.\n\nThe user message is the ticket body. Use only that text. If a detail is not in the body, do not add it.\n\nReply with a JSON object and nothing else. The object has exactly these fields:\n- summary: one or two sentences describing the reported issue.\n- customer_request: the action or outcome the customer appears to want.\n- missing_information: a list of details needed to understand or act on the request. Use an empty list when nothing is clearly missing.\n"
+    },
+    {
+      "role": "user",
+      "content": "Dear Customer Support Team,I hope this message finds you well. I am reaching out on behalf of our team at company_name. We have been utilizing Jira Software 8.20 as an essential tool for managing our project workflows, and it has significantly enhanced our productivity and project management capabilities. However, due to recent changes in our internal company policies, we require modifications to our existing workflows to better accommodate the new guidelines regarding ticket prioritization.In line with our new company policies, we need the ability to adjust the prioritization settings within Jira to reflect the changes in how issues should be processed and managed. Specifically, we are looking to incorporate a customized priority field that aligns with our updated prioritization matrix. Additionally, we would like to implement a feature that allows for dynamic adjustments based on the real-time status of issues and overarching project goals.Our objective is to ensure that our projects are managed more efficiently by allowing team members to categorize issues with the appropriate level of urgency as dictated by our new policy framework. Thus, we foresee the need for creating new custom workflows or modifying existing ones to include additional statuses and transition conditions which can accurately reflect these prioritization strategies.Could you please provide guidance on the best approach for implementing these workflow modifications? We are particularly interested in understanding the technical feasibility, potential timelines, and any assistance you can provide in terms of configuration or necessary plugins which might need to be applied to support these changes. It would be extremely helpful to have any documentation or best practices from prior similar implementations to help us navigate this adjustment seamlessly.We appreciate your attention to this matter and are hopeful for your expert advice on how to move forward. Please let us know a suitable time for us to discuss this in greater detail or if there are any initial resources you could provide to kickstart this process.Thank you very much for your support.Best regards,nameposition, company_nameemail_addresstel_num"
+    }
+  ],
+  "output": {
+    "summary": "Request for modifications to Jira workflows to align with updated company policies on ticket prioritization.",
+    "customer_request": "Implement a customized priority field and a feature for dynamic adjustments based on real-time status and project goals.",
+    "missing_information": []
+  },
+  "schema_error": null
+}

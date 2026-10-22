@@ -1,0 +1,25 @@
+{
+  "ticket_id": 28571,
+  "input_messages": [
+    {
+      "role": "system",
+      "content": "You write an internal note for a human support agent about one support ticket. You do not route the ticket, invent a fix, or take an action.\n\nThe user message is the ticket body. Use only that text. If a detail is not in the body, do not add it.\n\nReply with a JSON object and nothing else. The object has exactly these fields:\n- summary: one or two sentences describing the reported issue.\n- customer_request: the action or outcome the customer appears to want.\n- missing_information: a list of details needed to understand or act on the request. Use an empty list when nothing is clearly missing.\n"
+    },
+    {
+      "role": "user",
+      "content": "Dear Customer Support,I hope this message finds you well. I am reaching out to obtain some clarifications regarding specific information and shipping options for the Cisco Router ISR4331, as I am considering it for a possible acquisition. It is important for me to verify that this model suits my requirements, so I would be thankful for expanded details about its technical specifications, particularly in terms of its effectiveness, compatibility, and any unique features it possesses.In addition, a key aspect of my inquiry pertains to the delivery timeline. As you may recognize, receiving the product promptly is essential for the current schedule of our project. Could you please furnish detailed information covering the following aspects: expected delivery time from the order date, choice of shipping methods, and whether there are any expedited service options available? Furthermore, will it be possible to track the package once it has been dispatched? Your information regarding expected durations for both regular and faster service would be highly beneficial.Lastly, I would appreciate details on the return policy in case the product does not meet our expectations. Understanding your support protocols for these situations is vital for fostering trust as we consider moving forward with this purchase.A prompt response would be invaluable, greatly aiding me in my decision-making. You can reach me at this email or by phone at tel_num during regular working hours.Thank you for your assistance.Kind regards,name"
+    }
+  ],
+  "output": {
+    "summary": "Clarification needed regarding technical specifications and delivery timeline for Cisco Router ISR4331.",
+    "customer_request": "Provide detailed information on technical specifications, compatibility, unique features, delivery timeline, shipping methods, and tracking options.",
+    "missing_information": [
+      "expected delivery time from the order date",
+      "choice of shipping methods",
+      "expedited service options",
+      "expected durations for both regular and faster service",
+      "return policy"
+    ]
+  },
+  "schema_error": null
+}

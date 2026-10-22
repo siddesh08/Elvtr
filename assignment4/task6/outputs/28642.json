@@ -1,0 +1,19 @@
+{
+  "ticket_id": 28642,
+  "input_messages": [
+    {
+      "role": "system",
+      "content": "You write an internal note for a human support agent about one support ticket. You do not route the ticket, invent a fix, or take an action.\n\nThe user message is the ticket body. Use only that text. If a detail is not in the body, do not add it.\n\nReply with a JSON object and nothing else. The object has exactly these fields:\n- summary: one or two sentences describing the reported issue.\n- customer_request: the action or outcome the customer appears to want.\n- missing_information: a list of details needed to understand or act on the request. Use an empty list when nothing is clearly missing.\n"
+    },
+    {
+      "role": "user",
+      "content": "Dear Customer Support Team,I am writing to you regarding the upcoming scheduled maintenance of the AWS services that were recently communicated. The advanced notification mentioned that the scheduled maintenance for AWS might potentially lead to brief service outages. This maintenance particularly affects the services we currently depend upon as part of our AWS Management Service package.Given the critical nature of our online operations, even a brief service outage could have a significant impact on our business functions. Therefore, it is essential for us to understand more specifically the scope of the maintenance and any proactive steps we might need to undertake to minimize disruption.Could you please provide clarity on the expected timeline and any potential windows during which we might experience reduced functionality or a complete outage? While the official communication does make mention of updates being provided during the maintenance window, continuous monitoring on our end could be essential for mitigating any unforeseen issues. Knowing the exact start times and duration of the maintenance activities would better prepare our technical team to ensure that all our systems and processes continue to operate as smoothly as possible.Furthermore, we would appreciate any recommendations from your team regarding contingency plans or measures that we can take during this maintenance period to mitigate downtime risks. It would also be beneficial to know if there are any critical actions that should be undertaken prior to the commencement of the maintenance, possibly some preparatory tasks on our side to facilitate a seamless transition during and post-maintenance.We value the reliability of your IT services and understand the necessity of regular maintenance. Nevertheless, proactive communication and strategic planning can significantly alleviate concerns. I eagerly await your response to discuss how to best prepare for this upcoming service event.Thank you for your attention and assistance.Best regards,nametel_numcompany_name"
+    }
+  ],
+  "output": {
+    "summary": "The scheduled maintenance of AWS services is expected to cause brief service outages, affecting our critical operations.",
+    "customer_request": "Clarify the expected timeline and potential windows for reduced functionality or complete outage, and provide recommendations for contingency plans and preparatory tasks.",
+    "missing_information": []
+  },
+  "schema_error": null
+}

@@ -1,0 +1,19 @@
+{
+  "ticket_id": 28399,
+  "input_messages": [
+    {
+      "role": "system",
+      "content": "You write an internal note for a human support agent about one support ticket. You do not route the ticket, invent a fix, or take an action.\n\nThe user message is the ticket body. Use only that text. If a detail is not in the body, do not add it.\n\nReply with a JSON object and nothing else. The object has exactly these fields:\n- summary: one or two sentences describing the reported issue.\n- customer_request: the action or outcome the customer appears to want.\n- missing_information: a list of details needed to understand or act on the request. Use an empty list when nothing is clearly missing.\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello Customer Support, I am writing to request assistance concerning guidance services focused on establishing a dependable ticketing system and enhancing our current server management protocols. We are presently using your IT Consulting Service but are facing difficulties in fully utilizing its capabilities to improve our operational effectiveness. Our organization, directed by name, has been proactively searching for methods to optimize the handling of IT requests and boost the performance of our server setup. To begin with, we seek recommendations for the most suitable configuration of a ticketing system customized for our organizational requirements. Our goal is to create a platform that efficiently prioritizes incoming requests and facilitates a smooth upgrade process. Additionally, user-friendliness for our team members and ongoing integration of customer support are features of substantial importance to us. Significantly, we also wish to gain insights into refining our existing server administrative processes. Our servers occasionally experience latency problems, and we are eager to implement best practices that will mitigate interruptions, foster uptime, and improve overall efficacy. Advice on software applications, periodic system inspections, and specific tactics for better server management would be tremendously helpful. Finally, given the specialized nature of the guidance we're requesting, we are open to setting up a consultation session with one of your specialists. Kindly inform us of your availability and any preparatory steps we should take beforehand. Thank you for your prompt attention to this matter. We await your timely reply. Sincerely, name company_name Contact: tel_num Account number: acc_num"
+    }
+  ],
+  "output": {
+    "summary": "Customer requests assistance with establishing a reliable ticketing system and enhancing server management protocols.",
+    "customer_request": "Recommendation for a customized ticketing system and improvements to server management protocols.",
+    "missing_information": []
+  },
+  "schema_error": null
+}
