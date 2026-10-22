@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Fit TicketRouter on the canonical training split and predict validation.
+"""Fit the Homework 4 router on the canonical training split and predict validation.
 
-The manifest decides the split. Ticket text and labels come from the source
-CSV, not from the Homework 2 cleaned file. Test rows are not read.
+Same procedure as Homework 3. The manifest decides the split. Ticket text and
+labels come from the source CSV. Test rows are not read. The router in this
+folder is the Homework 3 model with C=0.1.
 Re-run from the repository root:
 
     .venv/bin/pip install -r "assignment3/homework_materials/SIDDESH NATESAN - requirements.txt"
-    .venv/bin/python assignment3/task2/apply_split.py
+    .venv/bin/python assignment4/task2/apply_split.py
 """
 
 from __future__ import annotations
@@ -19,7 +20,8 @@ import pandas as pd
 from ticket_router import TicketRouter
 
 ROOT = Path(__file__).resolve().parent
-MATERIALS = ROOT.parent / "homework_materials"
+# Canonical Homework 3 files. This script does not copy or rewrite them.
+MATERIALS = ROOT.parent.parent / "assignment3" / "homework_materials"
 SOURCE_CSV = MATERIALS / "SIDDESH NATESAN - support_tickets - SIDDESH NATESAN - support_tickets.csv"
 MANIFEST_CSV = MATERIALS / "SIDDESH NATESAN - split_manifest.csv"
 MODEL_PATH = ROOT / "outputs" / "ticket_router.joblib"

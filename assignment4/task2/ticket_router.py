@@ -3,8 +3,9 @@
 
 fit and predict both take the body as it appears in the source CSV.
 The class cleans the text, then trains or applies the TF-IDF vectorizer,
-then trains or applies the logistic regression. The settings are the
-Homework 2 baseline. This file does not read the split.
+then trains or applies the logistic regression. Cleaner, vectorizer, and
+solver match Homework 3. The one change is C=0.1 instead of C=1.0.
+This file does not read the split.
 """
 
 from __future__ import annotations
@@ -17,8 +18,12 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
-# Same settings as Homework 2. The solver sees rows in the order fit() is given.
+# Same settings as Homework 3, except C. The solver sees rows in the order fit() is given.
 RANDOM_STATE = 42
+# Homework 3 used C=1.0. Cue-word tickets were decided by one large coefficient
+# (network, website, server, crashes, breach, and a few others). C=0.1 is a
+# stronger L2 penalty, so one token has less room to swamp the rest of the body.
+REGULARIZATION_C = 0.1
 
 # <br>, <br/>, and <br />. Placeholder tags such as <tel_num> are not this pattern.
 BR_TAG = re.compile(r"<br\s*/?>", re.IGNORECASE)
@@ -55,7 +60,7 @@ class TicketRouter:
             class_weight="balanced",
             random_state=RANDOM_STATE,
             max_iter=200,
-            C=1.0,
+            C=REGULARIZATION_C,
         )
 
     @staticmethod
