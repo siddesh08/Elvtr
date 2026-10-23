@@ -1,0 +1,15 @@
+{
+  "ticket_id": 28571,
+  "output": {
+    "summary": "Clarification needed regarding technical specifications and delivery timeline for Cisco Router ISR4331",
+    "customer_request": "Provide detailed information on technical specifications, delivery timeline, and return policy for Cisco Router ISR4331",
+    "missing_information": [
+      "expected delivery time from the order date",
+      "choice of shipping methods",
+      "expedited service options available",
+      "tracking details for dispatched packages",
+      "return policy details"
+    ]
+  },
+  "schema_error": null
+}

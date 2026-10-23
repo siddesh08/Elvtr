@@ -1,0 +1,9 @@
+{
+  "ticket_id": 28907,
+  "output": {
+    "summary": "Billing discrepancy for AWS Management Service usage",
+    "customer_request": "A detailed breakdown of the billed items, usage metrics, and explanations for discrepancies, along with options for invoicing adjustments.",
+    "missing_information": []
+  },
+  "schema_error": null
+}

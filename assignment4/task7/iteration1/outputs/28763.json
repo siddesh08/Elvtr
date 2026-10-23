@@ -1,0 +1,13 @@
+{
+  "ticket_id": 28763,
+  "output": {
+    "summary": "Samsung QLED QN90A TV flickering issue reported by customer",
+    "customer_request": "Seek professional assistance to resolve the flickering issue with the Samsung QLED QN90A TV.",
+    "missing_information": [
+      "date of purchase",
+      "model specifications",
+      "system logs"
+    ]
+  },
+  "schema_error": null
+}

@@ -1,0 +1,9 @@
+{
+  "ticket_id": 28642,
+  "output": {
+    "summary": "Customer requests clarification on AWS scheduled maintenance and potential impact on operations.",
+    "customer_request": "Clarification on the expected timeline, potential windows of reduced functionality, and any critical actions to be taken prior to the maintenance.",
+    "missing_information": []
+  },
+  "schema_error": null
+}

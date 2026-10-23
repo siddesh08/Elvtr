@@ -1,0 +1,9 @@
+{
+  "ticket_id": 29206,
+  "output": {
+    "summary": "Request for modifications to Jira workflows to align with updated company policies on ticket prioritization.",
+    "customer_request": "Implement a customized priority field and a feature for dynamic adjustments based on real-time status and project goals.",
+    "missing_information": []
+  },
+  "schema_error": null
+}

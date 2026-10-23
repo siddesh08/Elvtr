@@ -1,0 +1,9 @@
+{
+  "ticket_id": 29206,
+  "output": {
+    "summary": "Request for guidance on implementing workflow modifications to accommodate new company policies regarding ticket prioritization in Jira Software 8.20.",
+    "customer_request": "Provide guidance on the best approach for implementing workflow modifications to accommodate new company policies regarding ticket prioritization in Jira Software 8.20.",
+    "missing_information": []
+  },
+  "schema_error": null
+}
