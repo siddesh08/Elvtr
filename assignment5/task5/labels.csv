@@ -1,0 +1,51 @@
+query_id,chunk_id,relevant,reason
+Q001,KB-AWS-MAINT-001-00,no,Scheduled window on 18 November 2023. It does not say whether an incident is open today.
+Q001,KB-AWS-MAINT-001-02,no,Update cadence for that named event. Not the last published time for a current regional status.
+Q001,KB-AWS-NEG-003-02,yes,The region and the symptom time are what get compared with the live status feed.
+Q001,KB-AWS-MAINT-001-01,no,Impact of the same 2023 window. Not a current incident.
+Q001,KB-AWS-NEG-003-00,yes,This is the article for current platform status and unscheduled impact.
+Q001,KB-AWS-MAINT-002-01,no,Prep steps before that planned window.
+Q001,KB-AWS-NEG-003-01,yes,Says whether an unscheduled incident is open and includes the time of the last published update.
+Q001,KB-CONSULT-003-01,no,Evidence to bring to a server-latency consultation.
+Q001,KB-CONSULT-003-03,no,Escalation rule for a consultation, not a regional status check.
+Q001,KB-AWS-NEG-002-02,no,Cost alerts. Six-hour spend checks are not service health.
+Q002,KB-JIRA-NEG-001-02,yes,Says to separate the mail event from the workflow step. Changes here are mail routing and recipients.
+Q002,KB-JIRA-002-02,yes,Support can add a status and a transition in the workflow.
+Q002,KB-JIRA-002-03,yes,Says this workflow article does not cover notification changes.
+Q002,KB-JIRA-NEG-002-03,no,Permissions article refusing to redesign statuses. The question is mail versus workflow.
+Q002,KB-JIRA-002-01,yes,The before-and-after status list the customer has to supply for the new state.
+Q002,KB-JIRA-NEG-001-01,yes,The notification scheme and the workflow are different objects, and it asks which role gets the email.
+Q002,KB-JIRA-002-00,yes,The article scope is adding statuses and transitions.
+Q002,KB-JIRA-NEG-002-02,no,Project-role membership for who can edit an issue, not who is emailed.
+Q002,KB-JIRA-NEG-002-00,no,Permission scheme. Not the notification scheme.
+Q002,KB-JIRA-001-02,no,Priority values. A review state is a status.
+Q003,KB-SHIP-NEG-001-02,yes,Address can be updated only before carrier handoff, and support says whether the order is still editable.
+Q003,KB-SHIP-NEG-001-01,yes,Asks for the order number and the new address.
+Q003,KB-SHIP-NEG-001-03,no,Refuses future-purchase timelines and early tracking numbers. Does not say whether expedited survives the change.
+Q003,KB-SHIP-001-04,no,Refuses address changes after handoff. The order is still editable, and expedited is not in this chunk.
+Q003,KB-SHIP-NEG-001-00,yes,Address changes are separate from quoting shipping speed.
+Q003,KB-CISCO-NEG-001-02,no,Firmware upgrade path. The router is an order, not a device to upgrade.
+Q003,KB-DIST-002-03,no,Subscription cancellation.
+Q003,KB-SHIP-001-03,yes,Which shipping methods are available for the destination.
+Q003,KB-CISCO-NEG-001-01,no,Firmware inputs. Current release and a backup.
+Q003,KB-CONSULT-002-01,no,Ticketing discovery. Not a hardware order.
+Q004,KB-SAM-TV-001-02,yes,Flicker on the built-in menu is treated as a hardware path for warranty or a technician.
+Q004,KB-SAM-TV-001-03,yes,Stops at the safe checks and says when to escalate to authorized service.
+Q004,KB-SAM-TV-001-01,yes,The safe checks, including the built-in menu test the query describes.
+Q004,KB-SAM-TV-001-00,yes,The flicker article. Input problem versus panel.
+Q004,KB-SAM-NEG-001-02,no,Audio article. It sets flicker aside and does not give the steps or the return comparison.
+Q004,KB-SAM-NEG-001-03,no,Redirects menu flicker away from audio. No return window and no technician route.
+Q004,KB-SAM-NEG-002-03,no,Says this return article will not diagnose flicker or send a technician, and it does not state the window.
+Q004,KB-SAM-TV-002-01,yes,Technician intake, and it asks whether the built-in menu flickers.
+Q004,KB-SAM-NEG-001-01,no,Audio checks. HDMI, eARC, TV speakers.
+Q004,KB-SAM-NEG-001-00,no,Sound dropouts while the picture stays stable. The opposite symptom.
+Q005,KB-SHIP-002-01,no,30-day hardware RMA. Not an authenticator.
+Q005,KB-DIST-001-02,no,Password reset. It mentions updating multifactor settings at the next sign-in, not enrolling a key or revoking one.
+Q005,KB-DIST-001-00,no,Password reset overview.
+Q005,KB-SHIP-002-03,no,How an RMA is issued.
+Q005,KB-DIST-002-03,no,Subscription cancellation limits.
+Q005,KB-SHIP-002-00,no,Returns for a router that did not meet expectations.
+Q005,KB-CISCO-001-02,no,ISR4331 modules and compatibility.
+Q005,KB-DIST-001-01,no,Identity fields for a password reset.
+Q005,KB-DIST-001-03,no,Password-reset limits. Still no hardware key.
+Q005,KB-CISCO-001-03,no,What a router spec question can be answered with.

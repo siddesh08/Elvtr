@@ -1,0 +1,51 @@
+query_id,rank,chunk_id,distance,article_id,section,title,relevant,reason
+Q001,1,KB-AWS-MAINT-001-00,0.2942,KB-AWS-MAINT-001,Event summary,Maintenance Notice AMS-2023-Q4-NET-17 for AWS Management Service,no,Scheduled window on 18 November 2023. It does not say whether an incident is open today.
+Q001,2,KB-AWS-MAINT-001-02,0.3009,KB-AWS-MAINT-001,What support provides,Maintenance Notice AMS-2023-Q4-NET-17 for AWS Management Service,no,Update cadence for that named event. Not the last published time for a current regional status.
+Q001,3,KB-AWS-NEG-003-02,0.3016,KB-AWS-NEG-003,What the customer provides,General AWS Management Service Health and Status Updates,yes,The region and the symptom time are what get compared with the live status feed.
+Q001,4,KB-AWS-MAINT-001-01,0.3033,KB-AWS-MAINT-001,Expected impact,Maintenance Notice AMS-2023-Q4-NET-17 for AWS Management Service,no,Impact of the same 2023 window. Not a current incident.
+Q001,5,KB-AWS-NEG-003-00,0.3126,KB-AWS-NEG-003,Overview,General AWS Management Service Health and Status Updates,yes,This is the article for current platform status and unscheduled impact.
+Q001,6,KB-AWS-MAINT-002-01,0.3347,KB-AWS-MAINT-002,What the customer should do before the window,Customer Preparation and Contingency Planning for Scheduled AWS Maintenance,no,Prep steps before that planned window.
+Q001,7,KB-AWS-NEG-003-01,0.3383,KB-AWS-NEG-003,What support provides,General AWS Management Service Health and Status Updates,yes,Says whether an unscheduled incident is open and includes the time of the last published update.
+Q001,8,KB-CONSULT-003-01,0.3400,KB-CONSULT-003,What the customer provides,Preparing Latency Evidence Before a Server Management Consultation,no,Evidence to bring to a server-latency consultation.
+Q001,9,KB-CONSULT-003-03,0.3404,KB-CONSULT-003,Escalation,Preparing Latency Evidence Before a Server Management Consultation,no,Escalation rule for a consultation
+Q001,10,KB-AWS-NEG-002-02,0.3525,KB-AWS-NEG-002,What support provides,Setting Cost Alert Thresholds for AWS Management Service Accounts,no,Cost alerts. Six-hour spend checks are not service health.
+Q002,1,KB-JIRA-NEG-001-02,0.2251,KB-JIRA-NEG-001,What support provides,Notification Schemes and Watchers in Jira Software 8.20,yes,Says to separate the mail event from the workflow step. Changes here are mail routing and recipients.
+Q002,2,KB-JIRA-002-02,0.2306,KB-JIRA-002,What support provides,Adding Workflow Statuses and Transition Conditions in Jira Software 8.20,yes,Support can add a status and a transition in the workflow.
+Q002,3,KB-JIRA-002-03,0.2421,KB-JIRA-002,Dynamic behavior and limits,Adding Workflow Statuses and Transition Conditions in Jira Software 8.20,yes,Says this workflow article does not cover notification changes.
+Q002,4,KB-JIRA-NEG-002-03,0.2482,KB-JIRA-NEG-002,Limits,Project Permissions and Role Access in Jira Software 8.20,no,Permissions article refusing to redesign statuses. The question is mail versus workflow.
+Q002,5,KB-JIRA-002-01,0.2496,KB-JIRA-002,What the customer provides,Adding Workflow Statuses and Transition Conditions in Jira Software 8.20,yes,The before-and-after status list the customer has to supply for the new state.
+Q002,6,KB-JIRA-NEG-001-01,0.2576,KB-JIRA-NEG-001,What the customer provides,Notification Schemes and Watchers in Jira Software 8.20,yes,The notification scheme and the workflow are different objects
+Q002,7,KB-JIRA-002-00,0.2616,KB-JIRA-002,Overview,Adding Workflow Statuses and Transition Conditions in Jira Software 8.20,yes,The article scope is adding statuses and transitions.
+Q002,8,KB-JIRA-NEG-002-02,0.2829,KB-JIRA-NEG-002,What support provides,Project Permissions and Role Access in Jira Software 8.20,no,Project-role membership for who can edit an issue
+Q002,9,KB-JIRA-NEG-002-00,0.2856,KB-JIRA-NEG-002,Overview,Project Permissions and Role Access in Jira Software 8.20,no,Permission scheme. Not the notification scheme.
+Q002,10,KB-JIRA-001-02,0.2879,KB-JIRA-001,What support provides,Custom Priority Configuration in Jira Software 8.20,no,Priority values. A review state is a status.
+Q003,1,KB-SHIP-NEG-001-02,0.2530,KB-SHIP-NEG-001,What support provides,Shipping Address Change Requests for Hardware Orders,yes,Address can be updated only before carrier handoff
+Q003,2,KB-SHIP-NEG-001-01,0.3129,KB-SHIP-NEG-001,What the customer provides,Shipping Address Change Requests for Hardware Orders,yes,Asks for the order number and the new address.
+Q003,3,KB-SHIP-NEG-001-03,0.3290,KB-SHIP-NEG-001,Limits,Shipping Address Change Requests for Hardware Orders,no,Refuses future-purchase timelines and early tracking numbers. Does not say whether expedited survives the change.
+Q003,4,KB-SHIP-001-04,0.3343,KB-SHIP-001,Limits,Shipping Methods and Tracking for Networking Equipment Orders,no,Refuses address changes after handoff. The order is still editable
+Q003,5,KB-SHIP-NEG-001-00,0.3448,KB-SHIP-NEG-001,Overview,Shipping Address Change Requests for Hardware Orders,yes,Address changes are separate from quoting shipping speed.
+Q003,6,KB-CISCO-NEG-001-02,0.3451,KB-CISCO-NEG-001,What support provides,Firmware Planning Limits for Cisco ISR4331 Routers,no,Firmware upgrade path. The router is an order
+Q003,7,KB-DIST-002-03,0.3562,KB-DIST-002,Limits,Intake for Subscription Cancellation Requests,no,Subscription cancellation.
+Q003,8,KB-SHIP-001-03,0.3571,KB-SHIP-001,What support provides,Shipping Methods and Tracking for Networking Equipment Orders,yes,Which shipping methods are available for the destination.
+Q003,9,KB-CISCO-NEG-001-01,0.3582,KB-CISCO-NEG-001,What the customer provides,Firmware Planning Limits for Cisco ISR4331 Routers,no,Firmware inputs. Current release and a backup.
+Q003,10,KB-CONSULT-002-01,0.3618,KB-CONSULT-002,What the customer provides,Discovery Inputs for Ticketing Workflow Recommendations,no,Ticketing discovery. Not a hardware order.
+Q004,1,KB-SAM-TV-001-02,0.1891,KB-SAM-TV-001,What support provides,Safe Troubleshooting for Intermittent Flicker on Samsung QN90A TVs,yes,Flicker on the built-in menu is treated as a hardware path for warranty or a technician.
+Q004,2,KB-SAM-TV-001-03,0.2000,KB-SAM-TV-001,Limits and escalation,Safe Troubleshooting for Intermittent Flicker on Samsung QN90A TVs,yes,Stops at the safe checks and says when to escalate to authorized service.
+Q004,3,KB-SAM-TV-001-01,0.2029,KB-SAM-TV-001,Safe checks the customer can perform,Safe Troubleshooting for Intermittent Flicker on Samsung QN90A TVs,yes,The safe checks
+Q004,4,KB-SAM-TV-001-00,0.2043,KB-SAM-TV-001,Symptoms,Safe Troubleshooting for Intermittent Flicker on Samsung QN90A TVs,yes,The flicker article. Input problem versus panel.
+Q004,5,KB-SAM-NEG-001-02,0.2323,KB-SAM-NEG-001,What support provides,Troubleshooting Audio Dropouts on Samsung QN90A Televisions,no,Audio article. It sets flicker aside and does not give the steps or the return comparison.
+Q004,6,KB-SAM-NEG-001-03,0.2551,KB-SAM-NEG-001,Limits,Troubleshooting Audio Dropouts on Samsung QN90A Televisions,no,Redirects menu flicker away from audio. No return window and no technician route.
+Q004,7,KB-SAM-NEG-002-03,0.2944,KB-SAM-NEG-002,Limits,Retail Return Windows for Samsung Televisions Purchased Through the Store,no,Says this return article will not diagnose flicker or send a technician
+Q004,8,KB-SAM-TV-002-01,0.2998,KB-SAM-TV-002,What the customer provides,Warranty Routing and Technician Assessment for Samsung Television Display Defects,yes,Technician intake
+Q004,9,KB-SAM-NEG-001-01,0.3258,KB-SAM-NEG-001,Safe checks,Troubleshooting Audio Dropouts on Samsung QN90A Televisions,no,Audio checks. HDMI
+Q004,10,KB-SAM-NEG-001-00,0.3259,KB-SAM-NEG-001,Symptoms,Troubleshooting Audio Dropouts on Samsung QN90A Televisions,no,Sound dropouts while the picture stays stable. The opposite symptom.
+Q005,1,KB-SHIP-002-01,0.3632,KB-SHIP-002,Eligibility,Return Eligibility and RMA Process for Networking Hardware,no,30-day hardware RMA. Not an authenticator.
+Q005,2,KB-DIST-001-02,0.3667,KB-DIST-001,What support provides,Identity Checks for Account Password Reset Requests,no,Password reset. It mentions updating multifactor settings at the next sign-in
+Q005,3,KB-DIST-001-00,0.3756,KB-DIST-001,Overview,Identity Checks for Account Password Reset Requests,no,Password reset overview.
+Q005,4,KB-SHIP-002-03,0.3875,KB-SHIP-002,What support provides,Return Eligibility and RMA Process for Networking Hardware,no,How an RMA is issued.
+Q005,5,KB-DIST-002-03,0.3935,KB-DIST-002,Limits,Intake for Subscription Cancellation Requests,no,Subscription cancellation limits.
+Q005,6,KB-SHIP-002-00,0.3973,KB-SHIP-002,Overview,Return Eligibility and RMA Process for Networking Hardware,no,Returns for a router that did not meet expectations.
+Q005,7,KB-CISCO-001-02,0.4000,KB-CISCO-001,Compatibility notes,Cisco ISR4331 Specification and Compatibility Reference,no,ISR4331 modules and compatibility.
+Q005,8,KB-DIST-001-01,0.4013,KB-DIST-001,What the customer provides,Identity Checks for Account Password Reset Requests,no,Identity fields for a password reset.
+Q005,9,KB-DIST-001-03,0.4074,KB-DIST-001,Limits,Identity Checks for Account Password Reset Requests,no,Password-reset limits. Still no hardware key.
+Q005,10,KB-CISCO-001-03,0.4105,KB-CISCO-001,What support provides and what it does not,Cisco ISR4331 Specification and Compatibility Reference,no,What a router spec question can be answered with.
