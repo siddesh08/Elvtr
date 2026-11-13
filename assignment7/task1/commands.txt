@@ -1,0 +1,2 @@
+docker build -t homework7-router .
+docker run --name homework7-router -p 8001:8000 homework7-router
