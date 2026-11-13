@@ -1,0 +1,2 @@
+docker build -t homework7-workflow .
+docker run --name homework7-workflow -p 8000:8000 --add-host=host.docker.internal:host-gateway -v homework7_traces:/logs -e WORKFLOW_LOG_PATH=/logs/traces.jsonl -e ROUTING_URL=http://host.docker.internal:8001 -e RETRIEVAL_URL=http://host.docker.internal:8002 -e OLLAMA_URL=http://host.docker.internal:8003 homework7-workflow
