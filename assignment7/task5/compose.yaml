@@ -1,0 +1,67 @@
+services:
+  workflow:
+    build: ../task4
+    ports:
+      - "8000:8000"
+    environment:
+      ROUTING_URL: http://router:8000
+      RETRIEVAL_URL: http://retrieval:8000
+      OLLAMA_URL: http://ollama:11434
+      WORKFLOW_LOG_PATH: /logs/traces.jsonl
+    volumes:
+      - homework7_traces:/logs
+    depends_on:
+      router:
+        condition: service_healthy
+      retrieval:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=15)"]
+      interval: 15s
+      timeout: 20s
+      retries: 3
+      start_period: 15s
+
+  router:
+    build: ../task1
+    ports:
+      - "8001:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=15)"]
+      interval: 15s
+      timeout: 20s
+      retries: 3
+      start_period: 30s
+
+  retrieval:
+    build: ../task2
+    ports:
+      - "8002:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=15)"]
+      interval: 15s
+      timeout: 20s
+      retries: 10
+      start_period: 120s
+
+  ollama:
+    image: ollama/ollama:0.34.1
+    ports:
+      - "8003:11434"
+    volumes:
+      - homework7_ollama:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "show", "qwen2.5:1.5b-instruct-q4_K_M"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  homework7_ollama:
+    name: homework7_ollama
+    external: true
+  homework7_traces:
+    name: homework7_traces
