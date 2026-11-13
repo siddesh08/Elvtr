@@ -1,0 +1,2 @@
+docker build -t homework7-retrieval .
+docker run --name homework7-retrieval -p 8002:8000 homework7-retrieval
